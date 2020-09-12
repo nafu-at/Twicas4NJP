@@ -1,5 +1,5 @@
 name: "Twicas4NJP"
-version: 1.0.0
+version: @version@
 authors: [NAFU_at]
 website: "https://nafuchoco.page/"
 main: "page.nafuchoco.neojukepro.twicas4njp.Twicas4NJP"
