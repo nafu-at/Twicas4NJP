@@ -20,12 +20,18 @@ plugins {
 }
 
 group 'page.nafuchoco'
-version '1.0.0'
+version '1.0.1'
 
 repositories {
     mavenCentral()
-    mavenLocal()
     jcenter()
+    maven {
+        url = 'https://maven.pkg.github.com/nafu-at/NeoJukePro'
+        credentials {
+            username = getProperty("GITHUB_USER") ? GITHUB_USER : ''
+            password = getProperty("GITHUB_TOKEN") ? GITHUB_TOKEN : ''
+        }
+    }
     maven { url 'https://jitpack.io' }
 }
 

@@ -35,8 +35,8 @@ import page.nafuchoco.neojukepro.core.MessageManager;
 import page.nafuchoco.neojukepro.core.command.MessageUtil;
 import page.nafuchoco.neojukepro.core.player.CustomAudioSourceManager;
 import page.nafuchoco.neojukepro.core.player.GuildAudioPlayer;
-import page.nafuchoco.neojukepro.twicas4mjp.TwitcastingClient;
-import page.nafuchoco.neojukepro.twicas4mjp.TwitcastingStreamInfo;
+import page.nafuchoco.neojukepro.twicas4njp.TwitcastingClient;
+import page.nafuchoco.neojukepro.twicas4njp.TwitcastingStreamInfo;
 
 import java.awt.*;
 import java.io.DataInput;

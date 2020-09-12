@@ -22,10 +22,13 @@ import com.sedmelluq.discord.lavaplayer.tools.io.HttpClientTools;
 import com.sedmelluq.discord.lavaplayer.tools.io.HttpInterface;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpUriRequest;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 
 public class TwitcastingStreamSegmentUrlProvider extends M3uStreamSegmentUrlProvider {
+    private static final Logger log = LoggerFactory.getLogger(TwitcastingStreamSegmentUrlProvider.class);
     private final String userName;
 
     private String streamSegmentPlaylistUrl;
@@ -36,7 +39,8 @@ public class TwitcastingStreamSegmentUrlProvider extends M3uStreamSegmentUrlProv
 
     @Override
     protected String getQualityFromM3uDirective(ExtendedM3uParser.Line directiveLine) {
-        return directiveLine.directiveArguments.get("MOVIE");
+        log.debug("Data: {}\n DirName: {} \n Dir: {}\n Ex: {}", directiveLine.lineData, directiveLine.directiveName, directiveLine.directiveArguments, directiveLine.extraData);
+        return "";
     }
 
     @Override

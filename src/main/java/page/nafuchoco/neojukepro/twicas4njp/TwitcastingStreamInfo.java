@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package page.nafuchoco.neojukepro.twicas4mjp;
+package page.nafuchoco.neojukepro.twicas4njp;
 
 import java.net.URL;
 
