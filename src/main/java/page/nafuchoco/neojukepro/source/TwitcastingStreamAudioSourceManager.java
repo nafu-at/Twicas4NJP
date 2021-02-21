@@ -16,7 +16,7 @@
 
 package page.nafuchoco.neojukepro.source;
 
-import com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager;
+import com.sedmelluq.discord.lavaplayer.player.AudioPlayerManager;
 import com.sedmelluq.discord.lavaplayer.tools.ExceptionTools;
 import com.sedmelluq.discord.lavaplayer.tools.Units;
 import com.sedmelluq.discord.lavaplayer.tools.io.HttpClientTools;
@@ -63,7 +63,10 @@ public class TwitcastingStreamAudioSourceManager implements CustomAudioSourceMan
     }
 
     @Override
-    public AudioItem loadItem(DefaultAudioPlayerManager manager, AudioReference reference) {
+    public AudioItem loadItem(AudioPlayerManager manager, AudioReference reference) {
+        if (!streamNameRegex.matcher(reference.getUri()).find())
+            return null;
+
         String userName = getUserIdentifierFromUrl(reference.identifier);
         if (userName == null)
             return null;
