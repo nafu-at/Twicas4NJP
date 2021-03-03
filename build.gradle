@@ -31,7 +31,7 @@ repositories {
 
 dependencies {
     compileOnly 'net.dv8tion:JDA:4.2.0_227'
-    compileOnly 'com.sedmelluq:lavaplayer:1.3.71'
+    compileOnly 'com.sedmelluq:lavaplayer:1.3.72'
     compileOnly 'com.github.FredBoat:Lavalink-Client:fac5a3caf8'
     compileOnly 'com.github.nafu-at:NeoJukePro:1.8.2'
 
