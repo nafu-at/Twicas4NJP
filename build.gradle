@@ -35,7 +35,7 @@ dependencies {
     compileOnly 'com.github.FredBoat:Lavalink-Client:fac5a3caf8'
     compileOnly 'com.github.nafu-at:NeoJukePro:1.8.2'
 
-    implementation 'org.jsoup:jsoup:1.13.1'
+    implementation 'org.jsoup:jsoup:1.14.1'
 }
 
 processResources {
